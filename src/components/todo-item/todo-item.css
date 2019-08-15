@@ -1,0 +1,94 @@
+.none {
+  display: none
+}
+.date {
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  right: 20%;
+  font-size: 10px;
+  padding: 0 3px;
+  opacity: .3;
+}
+.todo-item {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.task-title {
+  max-width: 50%;
+  overflow: auto;
+  max-height: 20px;
+  word-wrap:break-word;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.task-text {
+  max-width: 80%;
+  overflow-y:hidden;
+  overflow: auto;
+  max-height: 45px;
+  word-wrap:break-word;
+  font-size: 10px;
+}
+.success {
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  right: 60%;
+  font-size: 10px;
+}
+.list-group-item {
+  min-height: 92px;
+  margin-bottom: 5px;
+  padding-top: 20px; 
+}
+
+.badge {
+  position: absolute;
+  top: 1%;
+  right: 40%;
+}
+.verticalButtons {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+@media (max-width: 1000px) {
+    .success {
+      right: 70%;
+    }
+    .badge {
+      position: absolute;
+      top: 1%;
+      right: 45%;
+    }
+}
+@media (max-width: 866px) {
+  
+}
+@media (max-width: 680px) {
+  .success {
+    right: 88%;
+    top: 0%;
+  }
+  .badge {
+    position: absolute;
+    top: 0%;
+    right: 60%;
+  }
+  .date {
+    top: 0%;
+    right: 30%;
+  }
+  .task-text {
+    max-width: 80%;
+  }
+}
+@media (max-width: 516px) {
+  .date {
+    top: 0%;
+    right: 30%;
+  }
+}
