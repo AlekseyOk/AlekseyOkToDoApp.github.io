@@ -46,14 +46,10 @@ const Filters = ({ changeFilter }) => (
 );
 
 Filters.propTypes = {
-  amount: PropTypes.number,
-  activeFilter: PropTypes.string,
   changeFilter: PropTypes.func
 }
 
 Filters.defaultProps = {
-  amount: 0,
-  activeFilter: 'all',
   changeFilter: () => {}
 }
 

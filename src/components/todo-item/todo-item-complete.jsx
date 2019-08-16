@@ -61,8 +61,7 @@ ToDoItemComplete.defaultProps = {
   textTitle: '',
   priority: '',
   editTaskTitle: () => {},
-  editTask: () => {},
-  isAuthorized: false
+  editTask: () => {}
 }
 
 export default ToDoItemComplete;
