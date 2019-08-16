@@ -27,11 +27,17 @@ const ToDoListComplete = ({ tasksList, removeTask, completeTask, editTaskTitle, 
 ToDoListComplete.propTypes = {
   tasksList: PropTypes.array,
   removeTask: PropTypes.func,
+  completeTask: PropTypes.func,
+  editTaskTitle: PropTypes.func,
+  editTask: PropTypes.func
 }
 
 ToDoListComplete.defaultProps = {
   tasksList: [],
-  removeTask: () => {} 
+  removeTask: () => {},
+  completeTask: () => {},
+  editTaskTitle: () => {},
+  editTask: () => {}
 }
 
 export default ToDoListComplete;

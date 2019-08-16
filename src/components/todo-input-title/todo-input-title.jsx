@@ -20,12 +20,14 @@ const ToDoInputTitle = ({ value, onChange, focusAfterEnterOnTitle }) => (
 
 ToDoInputTitle.propTypes = {
   onChange: PropTypes.func,
-  value: PropTypes.string
+  value: PropTypes.string,
+  focusAfterEnterOnTitle: PropTypes.func
 }
 
 ToDoInputTitle.defaultProps = {
   onChange: () => {},
-  value: ''
+  value: '',
+  focusAfterEnterOnTitle: () => {}
 }
 
 export default ToDoInputTitle;

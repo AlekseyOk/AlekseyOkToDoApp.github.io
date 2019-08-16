@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ListGroup } from 'react-bootstrap';
 import ToDoItemActive from '../todo-item/todo-item-active';
 
-const ToDoList = ({ tasksList, removeTask, completeTask, editTaskTitle, editTask }) => (
+const ToDoListActive = ({ tasksList, removeTask, completeTask, editTaskTitle, editTask }) => (
   <ListGroup className='todo-list'>
     {tasksList.map(({ id, text, isCompleted, date, textTitle, priority }) => (
       <ToDoItemActive 
@@ -23,14 +23,20 @@ const ToDoList = ({ tasksList, removeTask, completeTask, editTaskTitle, editTask
     </ListGroup>
 );
 
-ToDoList.propTypes = {
+ToDoListActive.propTypes = {
   tasksList: PropTypes.array,
   removeTask: PropTypes.func,
+  completeTask: PropTypes.func,
+  editTaskTitle: PropTypes.func,
+  editTask: PropTypes.func
 }
 
-ToDoList.defaultProps = {
+ToDoListActive.defaultProps = {
   tasksList: [],
-  removeTask: () => {} 
+  removeTask: () => {},
+  completeTask: () => {},
+  editTaskTitle: () => {},
+  editTask: () => {}
 }
 
-export default ToDoList;
+export default ToDoListActive;
