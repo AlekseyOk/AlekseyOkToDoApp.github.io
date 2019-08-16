@@ -41,14 +41,28 @@ ToDoItemComplete.propTypes = {
   text: PropTypes.string,
   isCompleted: PropTypes.bool,
   removeTask: PropTypes.func,
+  completeTask: PropTypes.func,
   id: PropTypes.number,
+  date: PropTypes.string,
+  textTitle: PropTypes.string,
+  priority: PropTypes.string,
+  editTaskTitle: PropTypes.func,
+  editTask: PropTypes.func,
+  isAuthorized: PropTypes.bool,
 }
 
 ToDoItemComplete.defaultProps = {
   text: '',
   isCompleted: false,
   removeTask: () => {},
+  completeTask: () => {},
   id: 0,
+  date: '',
+  textTitle: '',
+  priority: '',
+  editTaskTitle: () => {},
+  editTask: () => {},
+  isAuthorized: false
 }
 
 export default ToDoItemComplete;

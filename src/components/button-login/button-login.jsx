@@ -9,7 +9,8 @@ export default withAuth(({ isAuthorized, authorize, noAuthorize }) =>
       <Button 
       className='buttonLogin'
       onClick={isAuthorized ? noAuthorize : authorize} 
-      variant='outline-light'>{isAuthorized ? 'LOGOUT' : 'LOGIN'}</Button>
+      variant='outline-light'>{isAuthorized ? 'LOGOUT' : 'LOGIN'}
+      </Button>
     </React.Fragment>
   )
 );

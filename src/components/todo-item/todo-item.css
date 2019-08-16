@@ -65,9 +65,7 @@
       right: 45%;
     }
 }
-@media (max-width: 866px) {
-  
-}
+
 @media (max-width: 680px) {
   .success {
     right: 88%;
