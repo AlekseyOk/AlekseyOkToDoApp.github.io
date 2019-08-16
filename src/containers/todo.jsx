@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux"
-import { addTask, removeTask, completeTask, changeFilter, editTaskTitle, editTask } from "../../actions/actions"
-import ToDoListActive from '../../components/todo-list/todo-list-active';
-import ToDoListComplete from '../../components/todo-list/todo-list-complete';
-import { withAuth } from "../../components/auth/auth";
-import Header from '../../components/header/header';
-import { getDate, filterTasks } from '../../functions'
+import { addTask, removeTask, completeTask, changeFilter, editTaskTitle, editTask } from "../actions/actions"
+import ToDoListActive from '../components/todo-list/todo-list-active';
+import ToDoListComplete from '../components/todo-list/todo-list-complete';
+import { withAuth } from "../components/auth/auth";
+import Header from '../components/header/header';
+import { getDate, filterTasks } from '../functions'
 
 import './todo.css';
 

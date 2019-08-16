@@ -1,5 +1,5 @@
 import React from 'react';
-import ToDo from '../../containers/todo/todo';
+import ToDo from '../../containers/todo';
 
 const PrivateRoute = () => (
   <div>
