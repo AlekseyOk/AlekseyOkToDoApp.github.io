@@ -21,7 +21,7 @@ class AuthProvider extends Component {
     this.auth0.authorize();
   }
   noAuthorize = () => {
-    this.setState({ isAuthorized: false });
+    this.setState({ isAuthorized: true });
   }
   
   handleAuthentication = () => {

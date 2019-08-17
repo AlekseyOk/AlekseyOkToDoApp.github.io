@@ -2,6 +2,13 @@
     width: 100vw;
 }
 
-.row {
-    width: 100%;
+@media (min-width: 768px) {
+    .row {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .navCenter {
+        text-align: center;
+    }
 }

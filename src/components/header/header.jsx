@@ -27,13 +27,13 @@ const Header = withAuth(({taskTextTitle,
       <Navbar bg="dark" variant="dark" className="headerWrapper">
         
         <Container>
-          <Row>
+          <Row className="navCenter">
           
-            <Col xl={{ span: 5, offset: 3 }} lg={{ span: 6, offset: 2 }} md={{ span: 8, offset: 0 }} sm={{ span: 10, offset: 1 }} xs={{ span: 12, offset: 1 }}>
+            <Col xl={{ span: 5, offset: 3 }} lg={{ span: 6, offset: 2 }} md={{ span: 7, offset: 1 }} sm={{ span: 10, offset: 1 }} xs={{ span: 12, offset: 0 }}>
               {isAuthorized && isTasksExist && <Filters changeFilter={changeFilter} />}
             </Col>
 
-            <Col xl={{ span: 2, offset: 0 }} lg={{ span: 2, offset: 0 }} md={{ span: 3, offset: 0 }} sm={{ span: 3, offset: 3 }} xs={{ span: 3, offset: 3 }}>
+            <Col xl={{ span: 2, offset: 0 }} lg={{ span: 2, offset: 0 }} md={{ span: 2, offset: 0 }} sm={{ span: 3, offset: 3 }} xs={{ span: 6, offset: 0 }}>
               {isAuthorized &&  <ModalAddTask 
                                   taskTextTitle={taskTextTitle} 
                                   handleInputTitleChange={handleInputTitleChange} 
@@ -48,7 +48,7 @@ const Header = withAuth(({taskTextTitle,
                                 /> }
             </Col>
 
-            <Col xl={{ span: 2, offset: 0 }} lg={{ span: 2, offset: 0 }} md={{ span: 1, offset: 0 }} sm={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 0 }}>
+            <Col xl={{ span: 2, offset: 0 }} lg={{ span: 2, offset: 0 }} md={{ span: 2, offset: 0 }} sm={{ span: 3, offset: 0 }} xs={{ span: 6, offset: 0 }}>
               <ButtonLogin/>
             </Col>
 

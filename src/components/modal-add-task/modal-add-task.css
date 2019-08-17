@@ -1,5 +1,11 @@
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .addTask {
       margin-top: 10px;
     }
-  }
+  } */
+
+  @media (max-width: 767px) {
+    .addTask {
+      margin-top: 7px;
+    }
+}

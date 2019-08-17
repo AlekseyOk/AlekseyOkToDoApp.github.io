@@ -68,17 +68,17 @@
 
 @media (max-width: 680px) {
   .success {
-    right: 88%;
+    right: 85%;
     top: 0%;
   }
   .badge {
     position: absolute;
     top: 0%;
-    right: 60%;
+    right: 51%;
   }
   .date {
-    top: 0%;
-    right: 30%;
+    top: 80%;
+    right: 17%;
   }
   .task-text {
     max-width: 80%;
@@ -86,7 +86,7 @@
 }
 @media (max-width: 516px) {
   .date {
-    top: 0%;
-    right: 30%;
+    top: 80%;
+    right: 17%;
   }
 }
