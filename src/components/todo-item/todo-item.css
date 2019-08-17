@@ -77,7 +77,7 @@
     right: 51%;
   }
   .date {
-    top: 80%;
+    top: 1%;
     right: 17%;
   }
   .task-text {
@@ -86,7 +86,8 @@
 }
 @media (max-width: 516px) {
   .date {
-    top: 85%;
-    right: 17%;
+    top: 1%;
+    right: 19%;
+    font-size: 8px;
   }
 }
