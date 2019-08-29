@@ -28,6 +28,7 @@ const ToDo = withAuth(class extends Component {
       taskText: value,
     })
   }
+
   handleInputTitleChange = ({ currentTarget: { value } }) => {
     this.setState({
       taskTextTitle: value,
@@ -42,7 +43,7 @@ const ToDo = withAuth(class extends Component {
 
   addTaskClickOk = () => {
     const { taskText, taskTextTitle, priority } = this.state;
-      const { addTask } = this.props;
+    const { addTask } = this.props;
 
       addTask((new Date()).getTime(), taskText, taskTextTitle, false, getDate(), priority);
 
