@@ -7,7 +7,8 @@ const { Provider, Consumer: AuthConsumer } = React.createContext({
 });
 
 class AuthProvider extends Component {
-  state = { isAuthorized: false }; 
+
+ state = { isAuthorized: false }
 
   auth0 = new auth0.WebAuth({
     domain: "dev-keiuj5p2.auth0.com",
@@ -16,6 +17,7 @@ class AuthProvider extends Component {
     responseType: "token id_token",
     scope: "openid"
   });
+
 
   authorize = () => {
     this.auth0.authorize();
@@ -40,6 +42,7 @@ class AuthProvider extends Component {
 
   render() {
     const { isAuthorized } = this.state;
+
     return (
       <Provider
         value={{

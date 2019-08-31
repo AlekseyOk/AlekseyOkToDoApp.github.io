@@ -10,7 +10,7 @@ const PrivateRoute = withAuth(
         isAuthorized ? (
           <RouteComponent {...routeProps} />
         ) : (
-          <Redirect to={"/login"} />
+          <Redirect to={"/public"} />
         )
       }
     />
