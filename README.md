@@ -1,7 +1,6 @@
 ## To Do App
 
 After authorization, you can add, delete, edit or filter your notes.
-The information was put to the Redux store.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
